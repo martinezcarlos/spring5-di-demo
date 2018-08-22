@@ -1,0 +1,17 @@
+#Spring searches by default yaml files that are named according to this regex: application.*\.yml
+#Default profile
+guru:
+  jms:
+    username: JMS username
+    password: somepass
+    url: someURL
+
+--- #File break in Yaml
+#New peofile in German
+#Creating a file named application-de.yml would work too.
+spring:
+  profiles: de
+
+guru:
+  jms:
+    username: JMS username in German
